@@ -96,10 +96,15 @@ COMP=	-Lminilibx -lmlx -lXext -lX11 -lm -pthread
 DEBUG=	-Wunused-but-set-parameter -Wunused-but-set-variable -g
 CFLAGS=	-W -Wall -Wextra -ansi -pedantic -I headers/ -D_BSD_SOURCE -Iminilibx
 
-$(NAME):	$(OBJ)
+LIB=minilibx/libmlx.a
+
+$(NAME):	$(LIB) $(OBJ)
 	$(CC) -o $(NAME) $(OBJ) $(COMP)
 
 all:	$(NAME)
+
+$(LIB):
+	$(MAKE) -C minilibx
 
 clean:
 	rm -f $(OBJ)
