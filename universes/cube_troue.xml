@@ -1,0 +1,94 @@
+<?xml version = "1.0" ?>
+<RT author = "Xavier" version = "0.5" name = "Univers 1"
+    desc = "Le premier univers du RT">
+  <?comment Tous les parametres sont dans l'ordre des structures du struct.h ?>
+  <scene>
+    <object>
+      <type> 6 </type> <?comment CUBE TROUE ?>
+      <pos>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <rotation>
+	<x> 90 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.2 </ambiant_light>
+	<diff_light> 0.6 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 10 </brillance>
+	<transparence> 0 </transparence>
+	<reflection> 0 </reflection>
+      </coeffs>
+      <power> 0 </power>
+      <size> 50 </size>
+      <angle> 0 </angle>
+      <xsize> -1 </xsize> <?comment -1 if undefined ?>
+      <ysize> -1 </ysize> <?comment -1 if undefined ?>
+    </object>
+
+    <object>
+      <type> -1 </type> <?comment LIGHT ?>
+      <pos>
+	<x> -150 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0 </ambiant_light>
+	<diff_light> 0 </diff_light>
+	<specular_light> 0 </specular_light>
+	<brillance> 0 </brillance>
+	<transparence> 0 </transparence>
+	<reflection> 0 </reflection>
+      </coeffs>
+      <power> 1.0 </power>
+      <size> 0 </size>
+      <angle> 0 </angle>
+      <xsize> -1 </xsize> <?comment -1 if undefined ?>
+      <ysize> -1 </ysize> <?comment -1 if undefined ?>
+    </object>
+  </scene>    
+  
+  
+  <universe>
+    <camera>
+      <pos>
+	<x> -2000 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+    </camera>
+    <constants>
+      <screen_dist> 1800 </screen_dist>
+      <cosmic_light> 1 </cosmic_light>
+      <transp_deep> 0 </transp_deep>
+      <reflec_deep> 0 </reflec_deep>
+    </constants>
+    <graph>
+      <calc_img>
+	<xsize> 800 </xsize>
+	<ysize> 400 </ysize>
+      </calc_img>
+      <aff_img>
+	<xsize> 800 </xsize>
+	<ysize> 400 </ysize>
+      </aff_img>
+    </graph>
+  </universe>
+</RT>

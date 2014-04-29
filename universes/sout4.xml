@@ -1,0 +1,97 @@
+<?xml version = "1.0" ?>
+<RT author = "despla_m" version = "0.5" name = "Soutenance 1"
+    desc = "Exemple 1 de la soutenance">
+  <?comment une sphere ; 2 spots ?>
+  <scene>
+    <object>
+      <type> 1 </type>
+      <pos>
+        <x> 0 </x>
+        <y> 0 </y>
+        <z> -100 </z>
+      </pos>
+      <color BASE = "16"> 0xffcc88 </color>
+      <coeffs>
+        <ambiant_light> 0.01 </ambiant_light>
+        <diff_light> 0.6 </diff_light>
+        <specular_light> 0.3 </specular_light>
+        <brillance> 10 </brillance>
+      </coeffs>
+      <xsize> -1 </xsize> <?comment -1 if undefined ?>
+      <ysize> -1 </ysize> <?comment -1 if undefined ?>
+    </object>
+
+    <object>
+      <type> 4 </type>
+      <rotation>
+        <x> 10 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </rotation>
+      <color BASE = "16"> 0x8888ff </color>
+      <coeffs>
+        <ambiant_light> 0.01 </ambiant_light>
+        <diff_light> 0.6 </diff_light>
+        <specular_light> 0.3 </specular_light>
+        <brillance> 10 </brillance>
+      </coeffs>
+      <size> 70 </size>
+      <xsize> -1 </xsize> <?comment -1 if undefined ?>
+      <ysize> -1 </ysize> <?comment -1 if undefined ?>
+    </object>
+
+    <object>
+      <type> -1 </type> <?comment LIGHT ?>
+      <pos>
+        <x> -500 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <power> 1.0 </power>
+    </object>
+
+    <object>
+      <type> -1 </type> <?comment LIGHT ?>
+      <pos>
+        <x> 0 </x>
+        <y> 500 </y>
+        <z> 300 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <power> 1.0 </power>
+    </object>
+
+  </scene>
+
+  <universe>
+    <camera>
+      <pos>
+	<x> -2000 </x>
+	<y> 0 </y>
+	<z> 100 </z>
+      </pos>
+      <rotation>
+	<x> 0 </x>
+	<y> 2 </y>
+	<z> 0 </z>
+      </rotation>
+    </camera>
+    <constants>
+      <screen_dist> 1800 </screen_dist>
+      <cosmic_light> 0xffffff </cosmic_light>
+      <transp_deep> 0 </transp_deep>
+      <reflec_deep> 0 </reflec_deep>
+    </constants>
+    <graph>
+      <calc_img>
+	<xsize> 800 </xsize>
+	<ysize> 400 </ysize>
+      </calc_img>
+      <aff_img>
+	<xsize> 800 </xsize>
+	<ysize> 400 </ysize>
+      </aff_img>
+    </graph>
+  </universe>
+</RT>

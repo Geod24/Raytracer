@@ -1,0 +1,46 @@
+<?xml version = "1.0" ?>
+<RT author = "Mathias" version = "0.5" name = "Test de scene"
+    desc = "Une scene de test pour mon parseur XML">
+  <?comment Non obligatoires. Et secondaires ?>
+  <scene>
+    <object>
+      <type> 3 </type>
+      <pos>
+        <x> 0 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </pos>
+      <rotation>
+        <x> 0 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </rotation>
+      <radius> 42 </radius>
+      <transparence> 0 </transparence>
+      <reflection> 42 </reflection>
+      <xsize> 0 </xsize> <?comment Pour le plan ?>
+      <ysize> 0 </ysize> <?comment Pour le plan ?>
+      <color BASE = "16"> 0xFF00FF </color>
+    </object>
+
+    <object>
+      <type> -1 </type>
+      <pos>
+        <x> -100 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </pos>
+      <rotation>
+        <x> 0 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </rotation>
+      <radius> 1 </radius>
+      <transparence> 0 </transparence>
+      <reflection> 0 </reflection>
+      <xsize> 0 </xsize> <?comment Pour le plan ?>
+      <ysize> 0 </ysize> <?comment Pour le plan ?>
+      <color BASE = "16"> 0xFFFFFF </color>
+    </object>
+  </scene>
+</RT>

@@ -1,0 +1,42 @@
+<?xml version = "1.0" ?>
+<RT author = "Xavier" version = "0.5" name = "Univers 1"
+    desc = "Le premier univers du RT">
+  <?comment Tous les parametres sont dans l'ordre des structures du struct.h ?>
+  <scene>
+
+
+  </scene>
+  
+  
+  <universe>
+    <camera>
+      <pos>
+	<x> -2000 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+    </camera>
+    <constants>
+      <screen_dist> 2500 </screen_dist>
+      <cosmic_light> 1 </cosmic_light>
+      <transp_deep> 0 </transp_deep>
+      <reflec_deep> 2 </reflec_deep>
+    </constants>
+    <graph>
+      <calc_img>
+	<xsize> 1000 </xsize>
+	<ysize> 500 </ysize>
+      </calc_img>
+      <aff_img>
+	<xsize> 1000 </xsize>
+	<ysize> 500 </ysize>
+      </aff_img>
+    </graph>
+  </universe>
+  
+</RT>

@@ -1,0 +1,90 @@
+<?xml version = "1.0" ?>
+<RT author = "despla_m" version = "0.5" name = "Soutenance 3"
+    desc = "Exemple 3 de la soutenance">
+  <?comment un cylindre ; une shpere ; un spots ?>
+  <scene>
+    <object>
+      <type> 2 </type>
+      <pos>
+        <x> 0 </x>
+        <y> 100 </y>
+        <z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0xCC33CC </color>
+      <rotation>
+        <x> 0 </x>
+        <y> 85 </y>
+        <z> -5 </z>
+      </rotation>
+      <coeffs>
+        <ambiant_light> 0.05 </ambiant_light>
+        <diff_light> 0.6 </diff_light>
+        <specular_light> 0.3 </specular_light>
+        <brillance> 10 </brillance>
+      </coeffs>
+      <size> 40 </size>
+      <xsize> -1 </xsize> <?comment -1 if undefined ?>
+      <ysize> -1 </ysize> <?comment -1 if undefined ?>
+    </object>
+
+    <object>
+      <type> 3 </type> <?comment SPHERE ?>
+      <pos>
+        <x> 0 </x>
+        <y> 100 </y>
+        <z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0xFFFF00 </color>
+      <coeffs>
+        <ambiant_light> 0.05 </ambiant_light>
+        <diff_light> 0.6 </diff_light>
+        <specular_light> 0.3 </specular_light>
+        <brillance> 10 </brillance>
+      </coeffs>
+      <size> 60 </size>
+    </object>
+
+   <object>
+      <type> -1 </type>
+      <pos>
+        <x> -50 </x>
+        <y> 0 </y>
+        <z> 50 </z>
+      </pos>
+      <color BASE = "16"> 0xFFFFFF </color>
+      <power> 1.0 </power>
+    </object>
+
+  </scene>
+
+  <universe>
+    <camera>
+      <pos>
+	<x> -2000 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+    </camera>
+    <constants>
+      <screen_dist> 1500 </screen_dist>
+      <cosmic_light> 0xffffff </cosmic_light>
+      <transp_deep> 0 </transp_deep>
+      <reflec_deep> 0 </reflec_deep>
+    </constants>
+    <graph>
+      <calc_img>
+	<xsize> 800 </xsize>
+	<ysize> 400 </ysize>
+      </calc_img>
+      <aff_img>
+	<xsize> 800 </xsize>
+	<ysize> 400 </ysize>
+      </aff_img>
+    </graph>
+  </universe>
+</RT>

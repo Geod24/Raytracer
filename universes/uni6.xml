@@ -1,0 +1,162 @@
+<?xml version = "1.0" ?>
+<RT author = "Xavier" version = "0.5" name = "Univers 1"
+    desc = "Le premier univers du RT">
+  <?comment Tous les parametres sont dans l'ordre des structures du struct.h ?>
+  <scene>
+    <object>
+      <type> 1 </type>
+      <pos>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> -150 </z>
+      </pos>
+      <color BASE = "16"> 0xff00ff </color>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.05 </ambiant_light>
+	<diff_light> 0.7 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 200 </brillance>
+	<transparence> 0 </transparence>
+	<reflection> 0.5 </reflection>
+      </coeffs>
+      <properties> 1 </properties>
+      <dam_color> 0x00ff00 </dam_color>
+      <power> 0.5 </power>
+      <properties> 2 </properties>
+      <size> 0 </size>
+      <angle> 0 </angle>
+    </object>
+
+    <object>
+      <type> 3 </type>
+      <pos>
+	<x> 800 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0x8888ff </color>
+      <coeffs>
+	<ambiant_light> 0.1 </ambiant_light>
+	<diff_light> 0.6 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 30 </brillance>
+	<reflection> 0 </reflection>
+	<transparence> 0.9 </transparence>
+      </coeffs>
+      <size> 150 </size>
+    </object>
+    
+    <object>
+      <type> 3 </type>
+      <pos>
+	<x> 800 </x>
+	<y> 0 </y>
+	<z> -50 </z>
+      </pos>
+      <color BASE = "16"> 0x0000ff </color>
+      <coeffs>
+	<ambiant_light> 0.1 </ambiant_light>
+	<diff_light> 0.6 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 0 </brillance>
+	<reflection> 1 </reflection>
+	<transparence> 0 </transparence>
+      </coeffs>
+      <size> 100 </size>
+    </object>
+
+    <object>
+      <type> 3 </type> <?comment SPHERE ?>
+      <pos>
+	<x> 800 </x>
+	<y> 300 </y>
+	<z> -110 </z>
+      </pos>
+      <color BASE = "16"> 0x0000ff </color>
+      <coeffs>
+	<ambiant_light> 0.1 </ambiant_light>
+	<diff_light> 0.6 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 30 </brillance>
+	<reflection> 0.5 </reflection>
+      </coeffs>
+      <size> 40 </size>
+    </object>
+    <object>
+      <type> 3 </type> <?comment SPHERE ?>
+      <pos>
+	<x> 800 </x>
+	<y> -300 </y>
+	<z> -110 </z>
+      </pos>
+      <color BASE = "16"> 0x0000ff </color>
+      <coeffs>
+	<ambiant_light> 0.1 </ambiant_light>
+	<diff_light> 0.6 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 30 </brillance>
+	<reflection> 0.5 </reflection>
+      </coeffs>
+      <size> 40 </size>
+    </object>
+    
+
+    <object>
+      <type> -1 </type> <?comment LIGHT ?>
+      <pos>
+	<x> 100 </x>
+	<y> 150 </y>
+	<z> -100 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <power> 1.0 </power>
+    </object>
+    <object>
+      <type> -1 </type> <?comment LIGHT ?>
+      <pos>
+	<x> 100 </x>
+	<y> -150 </y>
+	<z> -100 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <power> 1.0 </power>
+    </object>
+  </scene>
+    
+  <universe>
+    <camera>
+      <pos>
+	<x> -2000 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <rotation>
+	<x> 0 </x>
+	<y> 2 </y>
+	<z> 0 </z>
+      </rotation>
+    </camera>
+    <constants>
+      <screen_dist> 3000 </screen_dist>
+      <cosmic_light> 1 </cosmic_light>
+      <transp_deep> 10 </transp_deep>
+      <reflec_deep> 10 </reflec_deep>
+    </constants>
+    <graph>
+      <calc_img>
+	<xsize> 1600 </xsize>
+	<ysize> 800 </ysize>
+      </calc_img>
+      <aff_img>
+	<xsize> 1600 </xsize>
+	<ysize> 800 </ysize>
+      </aff_img>
+    </graph>
+  </universe>
+
+</RT>

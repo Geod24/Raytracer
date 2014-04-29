@@ -1,0 +1,272 @@
+<?xml version = "1.0" ?>
+<RT author = "Xavier" version = "0.5" name = "Univers 1"
+    desc = "Le premier univers du RT">
+  <?comment Tous les parametres sont dans l'ordre des structures du struct.h ?>
+  <scene>
+    <object>
+      <type> 3 </type>
+      <pos>
+	<x> 550 </x>
+	<y> 50 </y>
+	<z> -70 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.03 </ambiant_light>
+	<diff_light> 0.8 </diff_light>
+	<specular_light> 0.2 </specular_light>
+	<brillance> 10 </brillance>
+      </coeffs>
+      <size> 50 </size>
+    </object>
+    <object>
+      <type> 2 </type>
+      <pos>
+	<x> 600 </x>
+	<y> -300 </y>
+	<z> 50 </z>
+      </pos>
+      <color BASE = "16"> 0x88ff88 </color>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.03 </ambiant_light>
+	<diff_light> 0.8 </diff_light>
+	<specular_light> 0.2 </specular_light>
+	<brillance> 10 </brillance>
+	<reflection> 1 </reflection>
+      </coeffs>
+      <size> 70 </size>
+    </object>
+
+    <object>
+      <type> 1 </type>
+      <pos>
+	<x> 1000 </x>
+	<y> 0 </y>
+	<z> 200 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <rotation>
+	<x> 0 </x>
+	<y> 90 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.03 </ambiant_light>
+	<diff_light> 0.6 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 150 </brillance>
+	<transparence> 0 </transparence>
+	<reflection> 1 </reflection>
+      </coeffs>
+    </object>
+
+    <object>
+      <type> 1 </type>
+      <pos>
+	<x> -2500 </x>
+	<y> 0 </y>
+	<z> 200 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <rotation>
+	<x> 0 </x>
+	<y> -90 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.03 </ambiant_light>
+	<diff_light> 0.6 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 150 </brillance>
+	<transparence> 0 </transparence>
+	<reflection> 1 </reflection>
+      </coeffs>
+    </object>
+    
+    <object>
+      <type> 1 </type>
+      <pos>
+	<x> 0 </x>
+	<y> 300 </y>
+	<z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <rotation>
+	<x> 90 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.03 </ambiant_light>
+	<diff_light> 0.7 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 150 </brillance>
+	<transparence> 0 </transparence>
+	<reflection> 0.0 </reflection>
+      </coeffs>
+    </object>
+
+    <object>
+      <type> 1 </type>
+      <pos>
+	<x> 0 </x>
+	<y> -300 </y>
+	<z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <rotation>
+	<x> 90 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.03 </ambiant_light>
+	<diff_light> 0.7 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 150 </brillance>
+	<transparence> 0 </transparence>
+	<reflection> 0.0 </reflection>
+      </coeffs>
+    </object>
+
+    <object>
+      <type> 1 </type>
+      <pos>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 150 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.03 </ambiant_light>
+	<diff_light> 0.7 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 150 </brillance>
+	<transparence> 0 </transparence>
+	<reflection> 0 </reflection>
+      </coeffs>
+    </object>
+
+    <object>
+      <type> 1 </type>
+      <pos>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> -150 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+      <coeffs>
+	<ambiant_light> 0.03 </ambiant_light>
+	<diff_light> 0.7 </diff_light>
+	<specular_light> 0.3 </specular_light>
+	<brillance> 150 </brillance>
+	<transparence> 0 </transparence>
+	<reflection> 0 </reflection>
+      </coeffs>
+    </object>
+
+
+    <object>
+      <type> -1 </type>
+      <pos>
+	<x> 500 </x>
+	<y> 150 </y>
+	<z> -100 </z>
+      </pos>
+      <color BASE = "16"> 0xff0000 </color>
+      <power> 1.0 </power>
+    </object>
+    <object>
+      <type> -1 </type>
+      <pos>
+	<x> 600 </x>
+	<y> -150 </y>
+	<z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0x00ff00 </color>
+      <power> 1.0 </power>
+    </object>
+    <object>
+      <type> -1 </type>
+      <pos>
+	<x> 500 </x>
+	<y> 0 </y>
+	<z> 100 </z>
+      </pos>
+      <color BASE = "16"> 0x0000ff </color>
+      <power> 1.0 </power>
+    </object>
+    <object>
+      <type> -1 </type>
+      <pos>
+	<x> -1000 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0xffff00 </color>
+      <power> 0.5 </power>
+    </object>
+    <object>
+      <type> -1 </type>
+      <pos>
+	<x> -2000 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <color BASE = "16"> 0xffffff </color>
+      <power> 0.3 </power>
+    </object>
+  </scene>
+
+  <universe>
+    <camera>
+      <pos>
+	<x> -2000 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </pos>
+      <rotation>
+	<x> 0 </x>
+	<y> 0 </y>
+	<z> 0 </z>
+      </rotation>
+    </camera>
+    <constants>
+      <screen_dist> 2500 </screen_dist>
+      <cosmic_light> 0xffffff </cosmic_light>
+      <transp_deep> 50 </transp_deep>
+      <reflec_deep> 100 </reflec_deep>
+    </constants>
+    <graph>
+      <calc_img>
+	<xsize> 1600 </xsize>
+	<ysize> 800 </ysize>
+      </calc_img>
+      <aff_img>
+	<xsize> 1600 </xsize>
+	<ysize> 800 </ysize>
+      </aff_img>
+    </graph>
+  </universe>
+  
+</RT>
